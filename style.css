@@ -1,4 +1,4 @@
-header {
+header, footer {
     margin: 0px;
     padding: 4px 10%;
     display: flex;
@@ -6,6 +6,10 @@ header {
     justify-content: space-between;
     background-color: #1F2937;
     height: 50px;
+}
+
+footer {
+    justify-content: center;
 }
 
 body {
@@ -26,7 +30,6 @@ h2 {
     font-size: 36px;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-
     text-align: center;
 }
 
@@ -83,7 +86,7 @@ a, p {
 button {
     background-color: #3882f6;
     border: 0px;
-    width: 100px;
+    width: 150px;
     height: 40px;
     border-radius: 8px;
     color: #E5E7EB;
@@ -142,4 +145,33 @@ button {
     text-align: right;
     margin: 0px;
     font-size: 26px;
+}
+
+/* Call To Action Classes */
+
+.CTA {
+    margin: 100px 10%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+    background-color: #3882f6;
+    border-radius: 8px;
+    height: 150px;
+}
+
+.CTA-H3 {
+    @extend h3;
+    margin: 0px;
+}
+
+.CTA-p {
+    @extend p;
+    margin: 0px;
+}
+
+.CTA-Button {
+    @extend Button;
+    border: 2px solid white;
 }
