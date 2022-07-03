@@ -116,9 +116,30 @@ button {
 
 }
 
-.infotext {
+.infotext, .Author {
     text-align: center;
     @extend p;
     color: darkslategray;
 }
 
+.Quote {
+    font-size: 36px;
+    font-family: "light italic";
+    font-style: italic;
+    color: #1F2937;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.QuoteContainer {
+    background-color: #E5E7EB;
+    padding: 80px 15% 54px 15%;
+}
+
+.Author {
+    font-weight: 700;
+    text-align: right;
+    margin: 0px;
+    font-size: 26px;
+}
